@@ -1,0 +1,775 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TOSSIT - Addictive Fun For All</title>
+    <meta
+      name="description"
+      content="The original suction cup dart game that's taking over the world. Stick it, toss it, score it!"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  </head>
+  <body class="bg-white">
+    <main class="bg-white">
+      <section class="hero-video-section">
+        <video
+          class="hero-video"
+          src="assets/hero_banner.mov"
+          autoplay
+          muted
+          loop
+          playsinline
+          aria-hidden="true"
+        ></video>
+        <!-- Dark overlay -->
+        <div class="hero-video-overlay"></div>
+        <!-- Content -->
+        <div class="hero-video-content reveal">
+          <h1
+            class="text-7xl font-black uppercase tracking-tighter leading-none mb-8 italic"
+            style="color: #fff; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5)"
+          >
+            TOSSIT: <br />
+            <span style="color: var(--accent)">ADDICTIVE</span> <br />
+            <span
+              style="
+                color: transparent;
+                -webkit-text-stroke: 2px #fff;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+              "
+              >FUN FOR ALL</span
+            >
+          </h1>
+          <p
+            class="text-xl md:text-2xl max-w-xl mb-12 font-medium"
+            style="
+              color: rgba(255, 255, 255, 0.85);
+              text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            "
+          >
+            The original suction cup dart game that's taking over the world.
+            Stick it, toss it, score it! No boring parties allowed.
+          </p>
+          <button class="btn-primary">
+            Toss Now
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M5 12h14"></path>
+              <path d="m12 5 7 7-7 7"></path>
+            </svg>
+          </button>
+        </div>
+      </section>
+
+      <section class="bg-accent py-4 overflow-hidden border-y-4">
+        <div
+          class="marquee-content animate-marquee flex items-center gap-12 text-2xl font-black uppercase italic tracking-tighter text-black"
+        >
+          <!-- Spans will be injected by JS -->
+        </div>
+      </section>
+
+      <section class="px-6 pb-12 bg-white text-black">
+        <div class="container">
+          <h2
+            class="text-6xl font-black uppercase italic tracking-tighter text-center mb-20 leading-tight"
+          >
+            OVER 600 MILLION <br />
+            <span class="text-primary-yellow">VIEWS 🦠</span>
+          </h2>
+
+          <div class="video-gallery-container">
+            <div class="video-gallery-wrapper">
+              <div class="video-gallery-track" id="video-gallery-track">
+                <!-- Video items with provided thumbnails -->
+                <div class="video-card">
+                  <video
+                    src="viral_1.mp4"
+                    loop
+                    muted
+                    playsinline
+                    poster="https://tossit.game/cdn/shop/files/TOSSIT_viral_game_fun_Spain_7_3_million_views_friend-party-chilling-play-everywhere-darts-bowls-outdoors-indoors.png?v=1714670684&width=400"
+                  ></video>
+                </div>
+                <div class="video-card">
+                  <video
+                    src="viral_2.mp4"
+                    loop
+                    muted
+                    playsinline
+                    poster="https://tossit.game/cdn/shop/files/TOSSIT_viral_game_fun_France_69_million_views_friend-party-chilling-play-everywhere-darts-bowls-outdoors-indoors.png?v=1714670005&width=400"
+                  ></video>
+                </div>
+                <div class="video-card">
+                  <video
+                    src="viral_3.mp4"
+                    loop
+                    muted
+                    playsinline
+                    poster="https://tossit.game/cdn/shop/files/TOSSIT_viral_game_fun_Spain_Instagram_2Million_friend-party-chilling-play-everywhere-darts-bowls-outdoors-indoors.png?v=1714669497&width=400"
+                  ></video>
+                </div>
+                <div class="video-card">
+                  <video
+                    src="viral_4.mp4"
+                    loop
+                    muted
+                    playsinline
+                    poster="https://tossit.game/cdn/shop/files/TOSSIT_viral_game_fun_Spain_6_1_million_views_friend-party-chilling-play-everywhere-darts-bowls-outdoors-indoors.png?v=1714670722&width=400"
+                  ></video>
+                </div>
+                <div class="video-card">
+                  <video
+                    src="https://tossit.game/cdn/shop/files/TOSSIT_viral_game_fun-friend-party-chilling-play-everywhere-darts-bowls-outdoors-indoors.png?v=1714668220&width=400"
+                    loop
+                    muted
+                    playsinline
+                    poster="https://tossit.game/cdn/shop/files/TOSSIT_viral_game_fun-friend-party-chilling-play-everywhere-darts-bowls-outdoors-indoors.png?v=1714668220&width=400"
+                  ></video>
+                </div>
+                <div class="video-card">
+                  <video
+                    src="viral_1.mp4"
+                    loop
+                    muted
+                    playsinline
+                    poster="https://tossit.game/cdn/shop/files/TOSSIT_viral_game_fun_France_1_2_million_views_friend-party-chilling-play-everywhere-darts-bowls-outdoors-indoors.png?v=1714670079&width=400"
+                  ></video>
+                </div>
+                <div class="video-card">
+                  <video
+                    src="viral_2.mp4"
+                    loop
+                    muted
+                    playsinline
+                    poster="https://tossit.game/cdn/shop/files/TOSSIT_viral_game_fun_Germany_friend-party-chilling-play-everywhere-darts-bowls-outdoors-indoors.png?v=1714668275&width=400"
+                  ></video>
+                </div>
+                <div class="video-card">
+                  <video
+                    src="viral_3.mp4"
+                    loop
+                    muted
+                    playsinline
+                    poster="https://tossit.game/cdn/shop/files/TOSSIT_viral_game_Germany_fun-friend-party-chilling-play-everywhere-darts-bowls-outdoors-indoors.png?v=1714668553&width=400"
+                  ></video>
+                </div>
+                <div class="video-card">
+                  <video
+                    src="viral_4.mp4"
+                    loop
+                    muted
+                    playsinline
+                    poster="https://tossit.game/cdn/shop/files/TOSSIT_viral_game_Germany_2_fun-friend-party-chilling-play-everywhere-darts-bowls-outdoors-indoors.png?v=1714668637&width=400"
+                  ></video>
+                </div>
+                <div class="video-card">
+                  <video
+                    src="viral_5.mp4"
+                    loop
+                    muted
+                    playsinline
+                    poster="https://tossit.game/cdn/shop/files/TOSSIT_viral_game_fun_Spain_friend-party-chilling-play-everywhere-darts-bowls-outdoors-indoors.png?v=1714669204&width=400"
+                  ></video>
+                </div>
+                <div class="video-card">
+                  <video
+                    src="viral_1.mp4"
+                    loop
+                    muted
+                    playsinline
+                    poster="https://tossit.game/cdn/shop/files/TOSSIT_viral_game_fun_Spain_903k_views_friend-party-chilling-play-everywhere-darts-bowls-outdoors-indoors.png?v=1714669426&width=400"
+                  ></video>
+                </div>
+                <div class="video-card">
+                  <video
+                    src="viral_2.mp4"
+                    loop
+                    muted
+                    playsinline
+                    poster="https://tossit.game/cdn/shop/files/TOSSIT_viral_game_fun_Spain_2million_friend-party-chilling-play-everywhere-darts-bowls-outdoors-indoors.png?v=1714669464&width=400"
+                  ></video>
+                </div>
+                <div class="video-card">
+                  <video
+                    src="viral_3.mp4"
+                    loop
+                    muted
+                    playsinline
+                    poster="https://tossit.game/cdn/shop/files/TOSSIT_viral_game_fun_Germany_1.2million_friend-party-chilling-play-everywhere-darts-bowls-outdoors-indoors.png?v=1714669548&width=400"
+                  ></video>
+                </div>
+                <div class="video-card">
+                  <video
+                    src="viral_4.mp4"
+                    loop
+                    muted
+                    playsinline
+                    poster="https://tossit.game/cdn/shop/files/TOSSIT_viral_game_fun_Germany_instagram_million_friend-party-chilling-play-everywhere-darts-bowls-outdoors-indoors.png?v=1714669600&width=400"
+                  ></video>
+                </div>
+                <div class="video-card">
+                  <video
+                    src="viral_5.mp4"
+                    loop
+                    muted
+                    playsinline
+                    poster="https://tossit.game/cdn/shop/files/TOSSIT_viral_game_fun_Germany_1_6_million_views_friend-party-chilling-play-everywhere-darts-bowls-outdoors-indoors.png?v=1714670111&width=400"
+                  ></video>
+                </div>
+                <div class="video-card">
+                  <video
+                    src="viral_1.mp4"
+                    loop
+                    muted
+                    playsinline
+                    poster="https://tossit.game/cdn/shop/files/TOSSIT_viral_game_fun_Germany_2_2_million_views_friend-party-chilling-play-everywhere-darts-bowls-outdoors-indoors.png?v=1714670214&width=400"
+                  ></video>
+                </div>
+                <div class="video-card">
+                  <video
+                    src="viral_2.mp4"
+                    loop
+                    muted
+                    playsinline
+                    poster="https://tossit.game/cdn/shop/files/TOSSIT_viral_game_fun_Germany_2_2_million_number2_views_friend-party-chilling-play-everywhere-darts-bowls-outdoors-indoors.png?v=1714670287&width=400"
+                  ></video>
+                </div>
+                <div class="video-card">
+                  <video
+                    src="viral_3.mp4"
+                    loop
+                    muted
+                    playsinline
+                    poster="https://tossit.game/cdn/shop/files/TOSSIT_viral_game_fun_Spain_3_3_million_views_friend-party-chilling-play-everywhere-darts-bowls-outdoors-indoors.png?v=1714670622&width=400"
+                  ></video>
+                </div>
+                <div class="video-card">
+                  <video
+                    src="viral_4.mp4"
+                    loop
+                    muted
+                    playsinline
+                    poster="https://tossit.game/cdn/shop/files/TOSSIT_viral_game_fun_Spain_1_8_million_views_friend-party-chilling-play-everywhere-darts-bowls-outdoors-indoors.png?v=1714670654&width=400"
+                  ></video>
+                </div>
+                <div class="video-card">
+                  <video
+                    src="viral_5.mp4"
+                    loop
+                    muted
+                    playsinline
+                    poster="https://tossit.game/cdn/shop/files/TOSSIT_viral_game_fun_Spain_1_7_million_views_friend-party-chilling-play-everywhere-darts-bowls-outdoors-indoors.png?v=1714670761&width=400"
+                  ></video>
+                </div>
+              </div>
+            </div>
+
+            <div class="video-gallery-nav">
+              <button
+                id="video-prev"
+                class="video-nav-btn"
+                aria-label="Previous"
+              >
+                <i class="ph-bold ph-caret-left"></i>
+              </button>
+              <button id="video-next" class="video-nav-btn" aria-label="Next">
+                <i class="ph-bold ph-caret-right"></i>
+              </button>
+            </div>
+
+            <div class="video-gallery-dots" id="video-gallery-dots">
+              <!-- Dots injected by JS -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. FEATURE BAR -->
+      <div class="feature-bar">
+        <div class="page-width">
+          <ul class="feature-bar__list" role="list">
+            <li class="feature-bar__item">
+              <i
+                class="ph ph-users-three feature-bar__icon"
+                aria-hidden="true"
+              ></i>
+              <p class="feature-bar__title">+1M PLAYERS</p>
+              <p class="feature-bar__tagline">The world already knows</p>
+            </li>
+            <li class="feature-bar__item">
+              <i
+                class="ph ph-star-half feature-bar__icon"
+                aria-hidden="true"
+              ></i>
+              <p class="feature-bar__title">RATED 4.5</p>
+              <p class="feature-bar__tagline">By people who came back</p>
+            </li>
+            <li class="feature-bar__item">
+              <i class="ph ph-package feature-bar__icon" aria-hidden="true"></i>
+              <p class="feature-bar__title">FREE DELIVERY</p>
+              <p class="feature-bar__tagline">No tricks, no minimum</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <section class="benefits-section" id="benefits">
+        <div class="container">
+          <div class="text-center mb-16">
+            <p class="sticky-scroll-eyebrow">Why TOSSIT wins</p>
+            <h2 class="sticky-scroll-heading uppercase italic">
+              BUILT TO <span class="text-primary-yellow">STICK.</span>
+            </h2>
+          </div>
+
+          <div class="benefits-grid">
+            <div class="benefit-item">
+              <div class="benefit-icon-wrapper">
+                <i class="ph-fill ph-target"></i>
+              </div>
+              <h3 class="benefit-headline">STICKS TO ANYTHING</h3>
+              <p class="benefit-caption">
+                Industrial-grade suction for any smooth surface.
+              </p>
+            </div>
+
+            <!-- Benefit 2 -->
+            <div class="benefit-item">
+              <div class="benefit-icon-wrapper">
+                <i class="ph-fill ph-rocket-launch"></i>
+              </div>
+              <h3 class="benefit-headline">POCKET-SIZED PARTY</h3>
+              <p class="benefit-caption">
+                Fits in your jacket, ready to play in seconds.
+              </p>
+            </div>
+
+            <!-- Benefit 3 -->
+            <div class="benefit-item">
+              <div class="benefit-icon-wrapper">
+                <i class="ph-fill ph-shield-check"></i>
+              </div>
+              <h3 class="benefit-headline">ZERO DAMAGE</h3>
+              <p class="benefit-caption">
+                100% silicone that leaves no marks or residues.
+              </p>
+            </div>
+
+            <!-- Benefit 4 -->
+            <div class="benefit-item">
+              <div class="benefit-icon-wrapper">
+                <i class="ph-fill ph-lightning"></i>
+              </div>
+              <h3 class="benefit-headline">HIGHLY ADDICTIVE</h3>
+              <p class="benefit-caption">
+                Easy to learn, impossible to master.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="px-6 py-24 bg-black text-white">
+        <div class="container grid lg:grid-cols-2 gap-16 items-center">
+          <div class="relative">
+            <div
+              class="absolute inset-0 bg-gray-900 border-4 border-white translate-x-4 translate-y-4 -z-10"
+              style="border-radius: 40px"
+            ></div>
+            <img
+              src="assets/product.webp"
+              alt="The Starter Set"
+              class="w-full object-cover border-4 border-white"
+              style="height: 600px; border-radius: 40px"
+            />
+            <div
+              class="absolute top-8 left-8 bg-primary-blue text-white font-black px-6 py-2 border-4 border-white rounded-full shadow-sm uppercase italic text-xl -rotate-6"
+            >
+              Best Value
+            </div>
+          </div>
+
+          <div class="lg:pt-10">
+            <h2
+              class="text-6xl font-black uppercase italic tracking-tighter leading-tight mb-6 text-white"
+            >
+              TOSSIT Game Family Pack
+              <span class="text-primary-yellow">SET</span>
+            </h2>
+
+            <div class="flex items-center gap-6 mb-10">
+              <span
+                class="text-2xl text-white font-bold opacity-60"
+                style="text-decoration: line-through"
+                >€74,99</span
+              >
+              <span class="text-5xl font-black italic text-primary-red"
+                >€43,99</span
+              >
+              <span
+                class="bg-primary-green text-black text-sm font-black px-4 py-1 border-2 border-black rounded-full uppercase italic"
+              >
+                30% OFF
+              </span>
+            </div>
+
+            <p class="text-xl text-white font-medium mb-12 opacity-90">
+              This is our original TOSSIT set but DOUBLED! This is honestly the
+              best set to get if you are just starting and want to play TOSSIT
+              game with more than two people. This is perfect for 2-4 players
+              and let's you play 4 of our different game modes.
+            </p>
+
+            <div class="space-y-8 mb-12">
+              <div>
+                <label
+                  class="block text-sm font-black uppercase italic tracking-widest mb-4 text-white"
+                >
+                  Choose Your Colors
+                </label>
+                <div class="grid sm:grid-cols-2 gap-4">
+                  <button
+                    class="btn-primary"
+                    style="
+                      padding: 1rem 2rem;
+                      font-size: 1.125rem;
+                      border-radius: 0.75rem;
+                    "
+                  >
+                    Neon Mix
+                    <span
+                      style="
+                        font-size: 0.875rem;
+                        margin-left: 0.5rem;
+                        opacity: 0.7;
+                      "
+                      >(Default)</span
+                    >
+                  </button>
+                  <button
+                    class="btn-primary"
+                    style="
+                      padding: 1rem 2rem;
+                      font-size: 1.125rem;
+                      border-radius: 0.75rem;
+                      box-shadow: none;
+                      background-color: white;
+                      color: black;
+                      border-color: white;
+                    "
+                  >
+                    Stealth Black
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <button class="main-add-to-cart">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="8" cy="21" r="1"></circle>
+                <circle cx="19" cy="21" r="1"></circle>
+                <path
+                  d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"
+                ></path>
+              </svg>
+              Add to Cart
+            </button>
+
+            <div class="grid grid-cols-2 gap-8 pt-8">
+              <div class="flex items-center gap-4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="text-primary-blue"
+                >
+                  <path
+                    d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"
+                  ></path>
+                  <path d="M15 18H9"></path>
+                  <path d="M19 18h2a1 1 0 0 0 1-1v-5l-4-4h-3v10h3Z"></path>
+                  <circle cx="7" cy="18" r="2"></circle>
+                  <circle cx="17" cy="18" r="2"></circle>
+                </svg>
+                <span class="text-sm font-black uppercase italic leading-tight"
+                  >Fast Global Shipping</span
+                >
+              </div>
+              <div class="flex items-center gap-4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="text-primary-green"
+                >
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"></path>
+                  <path d="m9 12 2 2 4-4"></path>
+                </svg>
+                <span class="text-sm font-black uppercase italic leading-tight"
+                  >Money-Back Guarantee</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-12 px-6 bg-accent border-y-4">
+        <div class="container">
+          <h2
+            class="text-5xl font-black uppercase italic tracking-tighter text-center mb-10 text-black"
+          >
+            THE COMMUNITY <br />
+            <span class="bg-black text-white px-4">IS HOOKED</span>
+          </h2>
+          <div class="testimonials-marquee-outer">
+            <div
+              class="testimonials-marquee-track"
+              id="testimonials-marquee-track"
+            >
+              <!-- Cards injected by JS -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="product-carousel-section">
+        <div class="product-carousel-header">
+          <h2 class="product-carousel-heading">TRENDING NOW</h2>
+        </div>
+        <div class="product-carousel-wrapper">
+          <div class="product-carousel-nav">
+            <button
+              id="carousel-prev"
+              class="carousel-nav-btn"
+              aria-label="Previous"
+            >
+              <i class="ph ph-arrow-left"></i>
+            </button>
+            <button
+              id="carousel-next"
+              class="carousel-nav-btn"
+              aria-label="Next"
+            >
+              <i class="ph ph-arrow-right"></i>
+            </button>
+          </div>
+          <div class="product-carousel-outer">
+            <div class="product-carousel-track" id="product-carousel-track">
+              <!-- Cards injected by JS -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="newsletter-section">
+        <div class="newsletter-container">
+          <h2 class="newsletter-heading">Want a FREE expansion pack?</h2>
+          <p class="newsletter-subheading">
+            Sign up below and claim your free expansion pack. It’s a
+            limited-time offer — don’t miss it!
+          </p>
+
+          <form class="newsletter-form" onsubmit="event.preventDefault()">
+            <input
+              type="email"
+              placeholder="Your email"
+              class="newsletter-input"
+              required
+            />
+            <button type="submit" class="newsletter-btn">That's for me</button>
+          </form>
+
+          <div class="newsletter-mission">
+            <h3 class="mission-heading">
+              JOIN US ON OUR MISSION TO SPREAD TO FUN AROUND THE WORLD. ✌️
+            </h3>
+            <p class="mission-text">
+              We proudly invented TOSSIT in Annecy, France, to be sustainable
+              and fun for anyone to play.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 8. ACCORDION FAQ SECTION -->
+      <section class="py-18 pb-12 bg-white">
+        <div class="container" style="max-width: 896px">
+          <h2
+            class="text-6xl font-black uppercase italic tracking-tighter text-center mb-20 leading-tight text-black"
+          >
+            YOU GOT <br />
+            <span class="text-primary-yellow">QUESTIONS?</span>
+          </h2>
+
+          <div class="flex flex-column gap-6">
+            <div
+              class="faq-item border-4 rounded-2xl overflow-hidden bg-white shadow-sm text-black"
+              data-open="false"
+            >
+              <button class="faq-trigger">
+                DOES IT STICK TO WALLS?
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="faq-icon"
+                >
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+              </button>
+              <div class="faq-content">
+                <div
+                  class="px-8 pb-8 text-lg font-medium text-gray-700 leading-relaxed"
+                >
+                  TOSSIT sticks to any smooth, non-porous surface. Think glass,
+                  fridges, monitors, and laptops. Standard drywall is usually
+                  too textured, but give it a try!
+                </div>
+              </div>
+            </div>
+            <!-- FAQ 2 -->
+            <div
+              class="faq-item border-4 rounded-2xl overflow-hidden bg-white shadow-sm text-black"
+              data-open="false"
+            >
+              <button class="faq-trigger">
+                IS IT SAFE FOR KIDS?
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="faq-icon"
+                >
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+              </button>
+              <div class="faq-content">
+                <div
+                  class="px-8 pb-8 text-lg font-medium text-gray-700 leading-relaxed"
+                >
+                  Absolutely! TOSSIT is made from 100% food-grade silicone. It's
+                  soft, flexible, and has no sharp edges. Fun for ages 3 to 103.
+                </div>
+              </div>
+            </div>
+            <!-- FAQ 3 -->
+            <div
+              class="faq-item border-4 rounded-2xl overflow-hidden bg-white shadow-sm text-black"
+              data-open="false"
+            >
+              <button class="faq-trigger">
+                HOW DO I CLEAN THEM?
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="faq-icon"
+                >
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+              </button>
+              <div class="faq-content">
+                <div
+                  class="px-8 pb-8 text-lg font-medium text-gray-700 leading-relaxed"
+                >
+                  If they lose their stickiness, just rinse them with warm water
+                  and a bit of soap. They'll be as good as new in seconds.
+                </div>
+              </div>
+            </div>
+            <!-- FAQ 4 -->
+            <div
+              class="faq-item border-4 rounded-2xl overflow-hidden bg-white shadow-sm text-black"
+              data-open="false"
+            >
+              <button class="faq-trigger">
+                WHAT'S IN THE BOX?
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="faq-icon"
+                >
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+              </button>
+              <div class="faq-content">
+                <div
+                  class="px-8 pb-8 text-lg font-medium text-gray-700 leading-relaxed"
+                >
+                  The Starter Set includes 7 TOSSIT darts and 1 Jack target
+                  dart. Plenty to get a game going with friends.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
